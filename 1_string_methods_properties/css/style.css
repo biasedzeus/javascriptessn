@@ -5,3 +5,12 @@ body{
 h2{
     padding: 2rem;
 }
+code{
+    margin: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    background-color: aqua;
+    border-radius:10px;
+
+}

@@ -8,15 +8,51 @@
     <title>Document</title>
 </head>
 <body>
-    <section>
+    <section class="string-methods">
+        <h1>Substring Methods()</h1>
 
         <main>
-            <h2>Well thats a Heading</h2>
+            <h2>Extracting a substring from a string</h2>
             <p class="main_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iusto aliquam, est ad cupiditate voluptate! Enim ex veniam nostrum? Repellat cupiditate, dolor et hic ipsam quam aut recusandae explicabo aliquid.
-                Id dolorum, tempora optio eveniet ab saepe odit exercitationem voluptates ea soluta dolor dolore animi reiciendis officia odio recusandae est. Tempore in ducimus perferendis rerum incidunt, ratione sit assumenda dolor?
-                Obcaecati dolore ex quia temporibus unde repellat illo, fugiat perspiciatis illum. Suscipit, accusamus ex blanditiis perspiciatis iusto id, soluta eum ullam recusandae, officia eos ut ratione molestias? Sunt, minima necessitatibus.
-                Dolor sunt enim id doloribus qui esse suscipit distinctio pariatur rem! Doloribus nemo provident nihil cum voluptatem itaque reprehenderit, pariatur, minima quisquam, natus autem! Ut commodi debitis nesciunt nostrum in?
+                <h3>You can extract a substring from a string using the slice() method. You pass it:
+                </h3>
+                <ul>
+                    <li>the index at which to start extracting</li>
+                    <li> the index at which to stop extracting. This is exclusive, meaning that the character at this index is not included in the extracted substring.
+                       
+                </ul>
+
+                <code> 
+                    const browserType = 'mozilla';
+                    console.log(browserType.slice(1, 4)); // "ozi"</li>
+                </code>
+                <br>
+                <br>
+                <br>
+                <hr>
+                
+               
+               
+               <p>
+                The character at index 1 is "o", and the character at index 4 is "l".
+                So we extract all characters starting at "o" and ending just before "l", giving us "ozi".
+               If you know that you want to extract all of the remaining characters in a string after a
+              certain character, you don't have to include the second parameter. Instead, you only need to 
+              include the character position from where you want to extract the remaining characters in a string.
+               Try the following:
+               </p>
+                
+               <code>
+                browserType.slice(2); // "zilla"
+            
+               </code>
+            <p>
+                This returns "zilla" — this is because the character position of 2 is the letter "z", and because you didn't include a second parameter, 
+                the substring that was returned was all of the remaining characters in the string.
+
+            </p>
+                
+                
             </p>
         </main>
     </section>
