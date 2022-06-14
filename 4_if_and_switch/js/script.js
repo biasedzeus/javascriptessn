@@ -27,9 +27,11 @@ if(testScore >= 90){
     console.log("B");
 }else if(testScore >=50){
     console.log("C");
+}else if(testScore >=33){
+console.log("D")
 }
 else{
-    console.log("FAIL");
+    console.log("FAILED");
 }
 
 
